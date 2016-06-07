@@ -11,7 +11,7 @@ def home():
 
 @app.errorhandler(404)
 def page_not_found(error):
-    """404 page"""
+    """Page not Found - 404 page"""
     return render_template('not_found_page.html'), 404
 
 

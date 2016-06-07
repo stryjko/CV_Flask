@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/stryjko/Git/CV_Flask_Project/CV_Flask_Virtual"
+set -gx VIRTUAL_ENV "/home/stryjko/Git/CV_Flask/CV_Flask_Virtual"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

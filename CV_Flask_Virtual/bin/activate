@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/stryjko/Git/CV_Flask_Project/CV_Flask_Virtual"
+VIRTUAL_ENV="/home/stryjko/Git/CV_Flask/CV_Flask_Virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

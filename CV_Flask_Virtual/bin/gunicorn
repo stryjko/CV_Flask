@@ -1,0 +1,11 @@
+#!/home/stryjko/Git/CV_Flask_Project/CV_Flask_Virtual/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from gunicorn.app.wsgiapp import run
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(run())

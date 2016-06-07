@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}Curriculum Vitae{% endblock title %}</title>
+    <link rel="stylesheet" href="/static/css/uikit.almost-flat.min.css" />
+    <link rel="stylesheet" href="/static/css/base.css" />
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="/static/js/base.js"></script>
+</head>
+
+<body class="cv-background white">
+   
+    <header>
+        {% include "header.html" %}
+    </header>
+
+    <div class="uk-article-divider"></div>
+
+    <div>
+
+    {% block content %}
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "personal_details.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "summary.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "skills.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "experience.html" %}
+                </div>
+
+             </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "education.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "certificates.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "languages.html" %}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-article-divider"></div>
+
+        <div class="uk-container uk-container-center cv-opaque">
+            <div class="uk-grid uk-grid-width-1-1">
+                <div class="uk-grid-divider"></div>
+
+                <div>
+                    {% include "interests.html" %}
+                </div>
+
+            </div>
+        </div>
+
+    {% endblock content %}
+    </div>
+
+</body>
+</html>
